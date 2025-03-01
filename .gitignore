@@ -403,3 +403,5 @@ FodyWeavers.xsd
 
 # JetBrains Rider
 *.sln.iml
+/.vs/Songsterr-Plus-2.0/v17/.suo
+/.vs/slnx.sqlite
