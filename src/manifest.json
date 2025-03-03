@@ -5,7 +5,7 @@
     "description": "Replaces a Songsterr JavaScript file with a prettier version.",
     "permissions": [
         "webRequest",
-        "webRequestBlocking",
+        "webRequestBlocking", 
         "<all_urls>"
     ],
     "background": {
@@ -13,7 +13,9 @@
         "persistent": true
     },
     "web_accessible_resources": [
-        "appClient-C_QPBy9q.js"
+        "appClient-C_QPBy9q.js",
+		"preact-Ch3myUJ-.js",
+		"ConsentManager-CpoNH2xj.js"
     ],
     "content_scripts": [
         {
