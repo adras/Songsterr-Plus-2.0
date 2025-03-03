@@ -1,38 +1,24 @@
 {
-
-	"manifest_version": 2,
-	"name": "Songsterr Plus Hack 2.0",
-	"version": "1.4.1",
-	"icons": {
-		"48": "someicon.png"
-	},
-	"description": "Improve the user experience of songsterr",
-	"page_action": {
-		"default_icon": {
-			"16": "someicon.png",
-			"32": "someicon.png"
-		},
-		"default_title": "Hack Premium ;)",
-		"show_matches": ["https://www.songsterr.com/*"]
-	},
-	"content_scripts": [
-		{
-			"matches": ["https://www.songsterr.com/*"],
-			"js": ["inject.js"]
-		}
-	],
-	"background": {
-		"scripts": ["block.js"]
-	},
-	"permissions": [
-		"*://www.songsterr.com/*",
-		"*://gamergirlandco.github.io/*",
-		"webRequest",
-		"webRequestBlocking",
-		"activeTab",
-		"tabs",
-		"<all_urls>",
-		"idle"
-	]
-
+    "manifest_version": 2,
+    "name": "Songsterr Mod",
+    "version": "1.0",
+    "description": "Replaces a Songsterr JavaScript file with a prettier version.",
+    "permissions": [
+        "webRequest",
+        "webRequestBlocking",
+        "<all_urls>"
+    ],
+    "background": {
+        "scripts": ["background.js"],
+        "persistent": true
+    },
+    "web_accessible_resources": [
+        "appClient-C_QPBy9q.js"
+    ],
+    "content_scripts": [
+        {
+            "matches": ["https://www.songsterr.com/*"],
+            "js": ["content-script.js"]
+        }
+    ]
 }
